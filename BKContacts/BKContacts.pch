@@ -1,0 +1,46 @@
+//
+//  BKContacts.pch
+//  BKContacts
+//
+//  Created by apple on 15/7/29.
+//  Copyright (c) 2015年 CloudRoom. All rights reserved.
+//
+
+#ifndef BKContacts_BKContacts_pch
+#define BKContacts_BKContacts_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+// iOS version
+#define iOS6_OR_LATER [[[UIDevice currentDevice] systemVersion] floatValue] >= 6.0
+#define iOS7_OR_LATER [[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0
+#define iOS8_OR_LATER [[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0
+
+// custom color
+#import "UIColor+Hexadecimal.h"
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+// custom log
+#ifdef DEBUG
+    #define BKLog(...) NSLog(@"%s %@",__func__,[NSString stringWithFormat:__VA_ARGS__])
+#else
+    #define BKLog(...)
+#endif
+
+// custom categories
+#import "UIBarButtonItem+K.h"
+#import "NSString+K.h"
+#import "NSArray+K.h"
+#import "NSDictionary+K.h"
+
+// custom base controller
+#import "BaseNavigationController.h"
+
+// custom index
+#define ALPHA @"ABCDEFGHIJKLMNOPQRSTUVWXYZ#"
+
+// the third library
+#import "TKAlertCenter.h"
+
+#endif

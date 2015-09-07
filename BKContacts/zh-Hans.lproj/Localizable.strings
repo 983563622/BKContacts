@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  BKContacts
+
+  Created by apple on 15/7/29.
+  Copyright (c) 2015年 CloudRoom. All rights reserved.
+*/
+"Back" = "返回";
+"Contacts" = "联系人";
+"Contact Detail" = "联系人详情";
+"More" = "更多";
+"Edit Contact" = "编辑联系人";
+"Cancel" = "取消";
+"Delete Contact" = "删除联系人";

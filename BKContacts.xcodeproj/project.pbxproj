@@ -1,0 +1,898 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		189FA7041B690A4400974058 /* UITabBarController+HideTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 189FA7031B690A4400974058 /* UITabBarController+HideTabBar.m */; };
+		189FA7071B690EDB00974058 /* ContactDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189FA7061B690EDB00974058 /* ContactDetailViewController.m */; };
+		189FA7101B69158E00974058 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 189FA7121B69158E00974058 /* Localizable.strings */; };
+		18A1EE1F1B69F3E4001AA628 /* BackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A1EE1C1B69F3E4001AA628 /* BackButton.m */; };
+		18A1EE201B69F3E4001AA628 /* RightButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A1EE1E1B69F3E4001AA628 /* RightButton.m */; };
+		18A3EB661B9C38EF0080FF5B /* ContactsBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A3EB651B9C38EF0080FF5B /* ContactsBlockViewController.m */; };
+		18A3EB691B9C3C2E0080FF5B /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A3EB681B9C3C2E0080FF5B /* ContactsViewController.m */; };
+		18A468E61B6B257100D34169 /* UIColor+Hexadecimal.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A468E51B6B257100D34169 /* UIColor+Hexadecimal.m */; };
+		18A468EA1B6B25AD00D34169 /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A468E91B6B25AD00D34169 /* UIScrollView+EmptyDataSet.m */; };
+		18E900FF1B68ADF900A621CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E900FD1B68ADF900A621CD /* Main.storyboard */; };
+		18E901011B68ADF900A621CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E901001B68ADF900A621CD /* Images.xcassets */; };
+		18E901041B68ADF900A621CD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E901021B68ADF900A621CD /* LaunchScreen.xib */; };
+		18E901101B68ADF900A621CD /* BKContactsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9010F1B68ADF900A621CD /* BKContactsTests.m */; };
+		18E9011C1B68B12F00A621CD /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9011B1B68B12F00A621CD /* BaseNavigationController.m */; };
+		18E9011F1B68B16A00A621CD /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9011E1B68B16A00A621CD /* BaseTabBarController.m */; };
+		18E901221B68B17A00A621CD /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E901211B68B17A00A621CD /* BaseViewController.m */; };
+		18E901251B68B19300A621CD /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E901241B68B19300A621CD /* BaseTableViewController.m */; };
+		18E9012C1B68B43700A621CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9012A1B68B43700A621CD /* AppDelegate.m */; };
+		18E9012D1B68B43700A621CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9012B1B68B43700A621CD /* main.m */; };
+		18E901321B68B4E600A621CD /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E901311B68B4E600A621CD /* MoreViewController.m */; };
+		18E901351B68B4F500A621CD /* ContactsDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E901341B68B4F500A621CD /* ContactsDelegateViewController.m */; };
+		18E9013E1B68C29400A621CD /* ContactsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9013D1B68C29400A621CD /* ContactsHelper.m */; };
+		18E901421B68C2D900A621CD /* UIBarButtonItem+K.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E901411B68C2D900A621CD /* UIBarButtonItem+K.m */; };
+		18E901491B68C2EE00A621CD /* NSString+K.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E901441B68C2EE00A621CD /* NSString+K.m */; };
+		18E9014A1B68C2EE00A621CD /* NSArray+K.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E901461B68C2EE00A621CD /* NSArray+K.m */; };
+		18E9014B1B68C2EE00A621CD /* NSDictionary+K.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E901481B68C2EE00A621CD /* NSDictionary+K.m */; };
+		18E9014D1B68C58000A621CD /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E9014C1B68C58000A621CD /* AddressBook.framework */; };
+		18E9014F1B68C58400A621CD /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E9014E1B68C58400A621CD /* AddressBookUI.framework */; };
+		18E9015A1B68CEB100A621CD /* PinYinTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E901591B68CEB100A621CD /* PinYinTool.m */; };
+		18E9016A1B68CF1F00A621CD /* ChineseToPinyinResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9015E1B68CF1F00A621CD /* ChineseToPinyinResource.m */; };
+		18E9016B1B68CF1F00A621CD /* HanyuPinyinOutputFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E901601B68CF1F00A621CD /* HanyuPinyinOutputFormat.m */; };
+		18E9016C1B68CF1F00A621CD /* NSString+PinYin4Cocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E901621B68CF1F00A621CD /* NSString+PinYin4Cocoa.m */; };
+		18E9016D1B68CF1F00A621CD /* PinyinFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E901651B68CF1F00A621CD /* PinyinFormatter.m */; };
+		18E9016E1B68CF1F00A621CD /* PinyinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E901671B68CF1F00A621CD /* PinyinHelper.m */; };
+		18E9016F1B68CF1F00A621CD /* unicode_to_hanyu_pinyin.txt in Resources */ = {isa = PBXBuildFile; fileRef = 18E901691B68CF1F00A621CD /* unicode_to_hanyu_pinyin.txt */; };
+		18E901741B68CF8700A621CD /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E901711B68CF8700A621CD /* Contact.m */; };
+		18E901751B68CF8700A621CD /* SortContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E901731B68CF8700A621CD /* SortContact.m */; };
+		18E901831B68CFDD00A621CD /* BasePinyinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E901781B68CFDD00A621CD /* BasePinyinUnit.m */; };
+		18E901841B68CFDD00A621CD /* ParsePinyinUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9017A1B68CFDD00A621CD /* ParsePinyinUtil.m */; };
+		18E901851B68CFDD00A621CD /* PinyinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9017C1B68CFDD00A621CD /* PinyinUnit.m */; };
+		18E901861B68CFDD00A621CD /* QwertyMatchPinyinUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9017E1B68CFDD00A621CD /* QwertyMatchPinyinUtil.m */; };
+		18E901871B68CFDD00A621CD /* T9MatchPinyinUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E901801B68CFDD00A621CD /* T9MatchPinyinUtil.m */; };
+		18E901881B68CFDD00A621CD /* T9Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E901821B68CFDD00A621CD /* T9Util.m */; };
+		18E9018B1B68CFED00A621CD /* ExecTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9018A1B68CFED00A621CD /* ExecTime.m */; };
+		18E901921B68D38400A621CD /* ContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9018D1B68D38400A621CD /* ContactCell.m */; };
+		18E901931B68D38400A621CD /* ContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E9018E1B68D38400A621CD /* ContactCell.xib */; };
+		18E901941B68D38400A621CD /* ContactDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E901901B68D38400A621CD /* ContactDetailCell.m */; };
+		18E901951B68D38400A621CD /* ContactDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E901911B68D38400A621CD /* ContactDetailCell.xib */; };
+		18E9019D1B68D67D00A621CD /* TKAlertCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E901981B68D67D00A621CD /* TKAlertCenter.m */; };
+		18E9019E1B68D67D00A621CD /* TKGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9019A1B68D67D00A621CD /* TKGlobal.m */; };
+		18E9019F1B68D67D00A621CD /* UIView+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9019C1B68D67D00A621CD /* UIView+TKCategory.m */; };
+		18E901A21B68DAB800A621CD /* NSMutableAttributedString+K.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E901A11B68DAB800A621CD /* NSMutableAttributedString+K.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18E9010A1B68ADF900A621CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18E900E81B68ADF900A621CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18E900EF1B68ADF900A621CD;
+			remoteInfo = BKContacts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		189FA7021B690A4400974058 /* UITabBarController+HideTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+HideTabBar.h"; sourceTree = "<group>"; };
+		189FA7031B690A4400974058 /* UITabBarController+HideTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+HideTabBar.m"; sourceTree = "<group>"; };
+		189FA7051B690EDB00974058 /* ContactDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactDetailViewController.h; sourceTree = "<group>"; };
+		189FA7061B690EDB00974058 /* ContactDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactDetailViewController.m; sourceTree = "<group>"; };
+		189FA7111B69158E00974058 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		189FA7131B6915CD00974058 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		18A1EE1B1B69F3E4001AA628 /* BackButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackButton.h; sourceTree = "<group>"; };
+		18A1EE1C1B69F3E4001AA628 /* BackButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackButton.m; sourceTree = "<group>"; };
+		18A1EE1D1B69F3E4001AA628 /* RightButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightButton.h; sourceTree = "<group>"; };
+		18A1EE1E1B69F3E4001AA628 /* RightButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightButton.m; sourceTree = "<group>"; };
+		18A3EB641B9C38EF0080FF5B /* ContactsBlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsBlockViewController.h; sourceTree = "<group>"; };
+		18A3EB651B9C38EF0080FF5B /* ContactsBlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsBlockViewController.m; sourceTree = "<group>"; };
+		18A3EB671B9C3C2E0080FF5B /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
+		18A3EB681B9C3C2E0080FF5B /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
+		18A468E41B6B257100D34169 /* UIColor+Hexadecimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hexadecimal.h"; sourceTree = "<group>"; };
+		18A468E51B6B257100D34169 /* UIColor+Hexadecimal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hexadecimal.m"; sourceTree = "<group>"; };
+		18A468E81B6B25AD00D34169 /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
+		18A468E91B6B25AD00D34169 /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
+		18E900F01B68ADF900A621CD /* BKContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BKContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E900F41B68ADF900A621CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E900FE1B68ADF900A621CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18E901001B68ADF900A621CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		18E901031B68ADF900A621CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		18E901091B68ADF900A621CD /* BKContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BKContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E9010E1B68ADF900A621CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E9010F1B68ADF900A621CD /* BKContactsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKContactsTests.m; sourceTree = "<group>"; };
+		18E9011A1B68B12F00A621CD /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		18E9011B1B68B12F00A621CD /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		18E9011D1B68B16A00A621CD /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
+		18E9011E1B68B16A00A621CD /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
+		18E901201B68B17A00A621CD /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		18E901211B68B17A00A621CD /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		18E901231B68B19300A621CD /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		18E901241B68B19300A621CD /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		18E901291B68B43700A621CD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18E9012A1B68B43700A621CD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18E9012B1B68B43700A621CD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18E901301B68B4E600A621CD /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		18E901311B68B4E600A621CD /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
+		18E901331B68B4F500A621CD /* ContactsDelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsDelegateViewController.h; sourceTree = "<group>"; };
+		18E901341B68B4F500A621CD /* ContactsDelegateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsDelegateViewController.m; sourceTree = "<group>"; };
+		18E901361B68B67400A621CD /* BKContacts.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKContacts.pch; sourceTree = "<group>"; };
+		18E9013C1B68C29400A621CD /* ContactsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsHelper.h; sourceTree = "<group>"; };
+		18E9013D1B68C29400A621CD /* ContactsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsHelper.m; sourceTree = "<group>"; };
+		18E901401B68C2D900A621CD /* UIBarButtonItem+K.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+K.h"; sourceTree = "<group>"; };
+		18E901411B68C2D900A621CD /* UIBarButtonItem+K.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+K.m"; sourceTree = "<group>"; };
+		18E901431B68C2EE00A621CD /* NSString+K.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+K.h"; sourceTree = "<group>"; };
+		18E901441B68C2EE00A621CD /* NSString+K.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+K.m"; sourceTree = "<group>"; };
+		18E901451B68C2EE00A621CD /* NSArray+K.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+K.h"; sourceTree = "<group>"; };
+		18E901461B68C2EE00A621CD /* NSArray+K.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+K.m"; sourceTree = "<group>"; };
+		18E901471B68C2EE00A621CD /* NSDictionary+K.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+K.h"; sourceTree = "<group>"; };
+		18E901481B68C2EE00A621CD /* NSDictionary+K.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+K.m"; sourceTree = "<group>"; };
+		18E9014C1B68C58000A621CD /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		18E9014E1B68C58400A621CD /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		18E901581B68CEB100A621CD /* PinYinTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinYinTool.h; sourceTree = "<group>"; };
+		18E901591B68CEB100A621CD /* PinYinTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinYinTool.m; sourceTree = "<group>"; };
+		18E9015D1B68CF1F00A621CD /* ChineseToPinyinResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseToPinyinResource.h; sourceTree = "<group>"; };
+		18E9015E1B68CF1F00A621CD /* ChineseToPinyinResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseToPinyinResource.m; sourceTree = "<group>"; };
+		18E9015F1B68CF1F00A621CD /* HanyuPinyinOutputFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HanyuPinyinOutputFormat.h; sourceTree = "<group>"; };
+		18E901601B68CF1F00A621CD /* HanyuPinyinOutputFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HanyuPinyinOutputFormat.m; sourceTree = "<group>"; };
+		18E901611B68CF1F00A621CD /* NSString+PinYin4Cocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PinYin4Cocoa.h"; sourceTree = "<group>"; };
+		18E901621B68CF1F00A621CD /* NSString+PinYin4Cocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PinYin4Cocoa.m"; sourceTree = "<group>"; };
+		18E901631B68CF1F00A621CD /* PinYin4Objc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinYin4Objc.h; sourceTree = "<group>"; };
+		18E901641B68CF1F00A621CD /* PinyinFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinyinFormatter.h; sourceTree = "<group>"; };
+		18E901651B68CF1F00A621CD /* PinyinFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinyinFormatter.m; sourceTree = "<group>"; };
+		18E901661B68CF1F00A621CD /* PinyinHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinyinHelper.h; sourceTree = "<group>"; };
+		18E901671B68CF1F00A621CD /* PinyinHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinyinHelper.m; sourceTree = "<group>"; };
+		18E901691B68CF1F00A621CD /* unicode_to_hanyu_pinyin.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unicode_to_hanyu_pinyin.txt; sourceTree = "<group>"; };
+		18E901701B68CF8700A621CD /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		18E901711B68CF8700A621CD /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		18E901721B68CF8700A621CD /* SortContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortContact.h; sourceTree = "<group>"; };
+		18E901731B68CF8700A621CD /* SortContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortContact.m; sourceTree = "<group>"; };
+		18E901771B68CFDD00A621CD /* BasePinyinUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasePinyinUnit.h; sourceTree = "<group>"; };
+		18E901781B68CFDD00A621CD /* BasePinyinUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasePinyinUnit.m; sourceTree = "<group>"; };
+		18E901791B68CFDD00A621CD /* ParsePinyinUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParsePinyinUtil.h; sourceTree = "<group>"; };
+		18E9017A1B68CFDD00A621CD /* ParsePinyinUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParsePinyinUtil.m; sourceTree = "<group>"; };
+		18E9017B1B68CFDD00A621CD /* PinyinUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinyinUnit.h; sourceTree = "<group>"; };
+		18E9017C1B68CFDD00A621CD /* PinyinUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinyinUnit.m; sourceTree = "<group>"; };
+		18E9017D1B68CFDD00A621CD /* QwertyMatchPinyinUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QwertyMatchPinyinUtil.h; sourceTree = "<group>"; };
+		18E9017E1B68CFDD00A621CD /* QwertyMatchPinyinUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QwertyMatchPinyinUtil.m; sourceTree = "<group>"; };
+		18E9017F1B68CFDD00A621CD /* T9MatchPinyinUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = T9MatchPinyinUtil.h; sourceTree = "<group>"; };
+		18E901801B68CFDD00A621CD /* T9MatchPinyinUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = T9MatchPinyinUtil.m; sourceTree = "<group>"; };
+		18E901811B68CFDD00A621CD /* T9Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = T9Util.h; sourceTree = "<group>"; };
+		18E901821B68CFDD00A621CD /* T9Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = T9Util.m; sourceTree = "<group>"; };
+		18E901891B68CFED00A621CD /* ExecTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExecTime.h; sourceTree = "<group>"; };
+		18E9018A1B68CFED00A621CD /* ExecTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExecTime.m; sourceTree = "<group>"; };
+		18E9018C1B68D38400A621CD /* ContactCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactCell.h; sourceTree = "<group>"; };
+		18E9018D1B68D38400A621CD /* ContactCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactCell.m; sourceTree = "<group>"; };
+		18E9018E1B68D38400A621CD /* ContactCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactCell.xib; sourceTree = "<group>"; };
+		18E9018F1B68D38400A621CD /* ContactDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactDetailCell.h; sourceTree = "<group>"; };
+		18E901901B68D38400A621CD /* ContactDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactDetailCell.m; sourceTree = "<group>"; };
+		18E901911B68D38400A621CD /* ContactDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactDetailCell.xib; sourceTree = "<group>"; };
+		18E901971B68D67D00A621CD /* TKAlertCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKAlertCenter.h; sourceTree = "<group>"; };
+		18E901981B68D67D00A621CD /* TKAlertCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKAlertCenter.m; sourceTree = "<group>"; };
+		18E901991B68D67D00A621CD /* TKGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKGlobal.h; sourceTree = "<group>"; };
+		18E9019A1B68D67D00A621CD /* TKGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKGlobal.m; sourceTree = "<group>"; };
+		18E9019B1B68D67D00A621CD /* UIView+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TKCategory.h"; sourceTree = "<group>"; };
+		18E9019C1B68D67D00A621CD /* UIView+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TKCategory.m"; sourceTree = "<group>"; };
+		18E901A01B68DAB800A621CD /* NSMutableAttributedString+K.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+K.h"; sourceTree = "<group>"; };
+		18E901A11B68DAB800A621CD /* NSMutableAttributedString+K.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+K.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18E900ED1B68ADF900A621CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E9014F1B68C58400A621CD /* AddressBookUI.framework in Frameworks */,
+				18E9014D1B68C58000A621CD /* AddressBook.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E901061B68ADF900A621CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18A1EE1A1B69F3AC001AA628 /* NavigationButtons */ = {
+			isa = PBXGroup;
+			children = (
+				18A1EE1B1B69F3E4001AA628 /* BackButton.h */,
+				18A1EE1C1B69F3E4001AA628 /* BackButton.m */,
+				18A1EE1D1B69F3E4001AA628 /* RightButton.h */,
+				18A1EE1E1B69F3E4001AA628 /* RightButton.m */,
+			);
+			path = NavigationButtons;
+			sourceTree = "<group>";
+		};
+		18A3EB6A1B9C55450080FF5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18E9014E1B68C58400A621CD /* AddressBookUI.framework */,
+				18E9014C1B68C58000A621CD /* AddressBook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18A468E71B6B258200D34169 /* DZNEmptyDataSet */ = {
+			isa = PBXGroup;
+			children = (
+				18A468E81B6B25AD00D34169 /* UIScrollView+EmptyDataSet.h */,
+				18A468E91B6B25AD00D34169 /* UIScrollView+EmptyDataSet.m */,
+			);
+			path = DZNEmptyDataSet;
+			sourceTree = "<group>";
+		};
+		18E900E71B68ADF900A621CD = {
+			isa = PBXGroup;
+			children = (
+				18A3EB6A1B9C55450080FF5B /* Frameworks */,
+				18E900F21B68ADF900A621CD /* BKContacts */,
+				18E9010C1B68ADF900A621CD /* BKContactsTests */,
+				18E900F11B68ADF900A621CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18E900F11B68ADF900A621CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18E900F01B68ADF900A621CD /* BKContacts.app */,
+				18E901091B68ADF900A621CD /* BKContactsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18E900F21B68ADF900A621CD /* BKContacts */ = {
+			isa = PBXGroup;
+			children = (
+				18E901391B68C22B00A621CD /* Other【其他】 */,
+				18E901281B68B3EC00A621CD /* Main【主要】 */,
+				18E901271B68B3C100A621CD /* More【更多】 */,
+				18E901261B68B3A200A621CD /* Contacts【通讯录】 */,
+				18E901191B68B10500A621CD /* Base */,
+				18E900FD1B68ADF900A621CD /* Main.storyboard */,
+				18E901001B68ADF900A621CD /* Images.xcassets */,
+				18E901021B68ADF900A621CD /* LaunchScreen.xib */,
+				18E900F31B68ADF900A621CD /* Supporting Files */,
+			);
+			path = BKContacts;
+			sourceTree = "<group>";
+		};
+		18E900F31B68ADF900A621CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18E900F41B68ADF900A621CD /* Info.plist */,
+				18E901361B68B67400A621CD /* BKContacts.pch */,
+				189FA7121B69158E00974058 /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18E9010C1B68ADF900A621CD /* BKContactsTests */ = {
+			isa = PBXGroup;
+			children = (
+				18E9010F1B68ADF900A621CD /* BKContactsTests.m */,
+				18E9010D1B68ADF900A621CD /* Supporting Files */,
+			);
+			path = BKContactsTests;
+			sourceTree = "<group>";
+		};
+		18E9010D1B68ADF900A621CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18E9010E1B68ADF900A621CD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18E901191B68B10500A621CD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				18E9011A1B68B12F00A621CD /* BaseNavigationController.h */,
+				18E9011B1B68B12F00A621CD /* BaseNavigationController.m */,
+				18E9011D1B68B16A00A621CD /* BaseTabBarController.h */,
+				18E9011E1B68B16A00A621CD /* BaseTabBarController.m */,
+				18E901201B68B17A00A621CD /* BaseViewController.h */,
+				18E901211B68B17A00A621CD /* BaseViewController.m */,
+				18E901231B68B19300A621CD /* BaseTableViewController.h */,
+				18E901241B68B19300A621CD /* BaseTableViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		18E901261B68B3A200A621CD /* Contacts【通讯录】 */ = {
+			isa = PBXGroup;
+			children = (
+				18E901381B68C0D300A621CD /* Views */,
+				18E901371B68C0B600A621CD /* Models */,
+				18E9012E1B68B45800A621CD /* Controllers */,
+			);
+			path = "Contacts【通讯录】";
+			sourceTree = "<group>";
+		};
+		18E901271B68B3C100A621CD /* More【更多】 */ = {
+			isa = PBXGroup;
+			children = (
+				18E9012F1B68B47500A621CD /* Controllers */,
+			);
+			path = "More【更多】";
+			sourceTree = "<group>";
+		};
+		18E901281B68B3EC00A621CD /* Main【主要】 */ = {
+			isa = PBXGroup;
+			children = (
+				18E901291B68B43700A621CD /* AppDelegate.h */,
+				18E9012A1B68B43700A621CD /* AppDelegate.m */,
+				18E9012B1B68B43700A621CD /* main.m */,
+			);
+			path = "Main【主要】";
+			sourceTree = "<group>";
+		};
+		18E9012E1B68B45800A621CD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18A3EB671B9C3C2E0080FF5B /* ContactsViewController.h */,
+				18A3EB681B9C3C2E0080FF5B /* ContactsViewController.m */,
+				18E901331B68B4F500A621CD /* ContactsDelegateViewController.h */,
+				18E901341B68B4F500A621CD /* ContactsDelegateViewController.m */,
+				189FA7051B690EDB00974058 /* ContactDetailViewController.h */,
+				189FA7061B690EDB00974058 /* ContactDetailViewController.m */,
+				18A3EB641B9C38EF0080FF5B /* ContactsBlockViewController.h */,
+				18A3EB651B9C38EF0080FF5B /* ContactsBlockViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18E9012F1B68B47500A621CD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18E901301B68B4E600A621CD /* MoreViewController.h */,
+				18E901311B68B4E600A621CD /* MoreViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18E901371B68C0B600A621CD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				18E901701B68CF8700A621CD /* Contact.h */,
+				18E901711B68CF8700A621CD /* Contact.m */,
+				18E901721B68CF8700A621CD /* SortContact.h */,
+				18E901731B68CF8700A621CD /* SortContact.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		18E901381B68C0D300A621CD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18E9018C1B68D38400A621CD /* ContactCell.h */,
+				18E9018D1B68D38400A621CD /* ContactCell.m */,
+				18E9018E1B68D38400A621CD /* ContactCell.xib */,
+				18E9018F1B68D38400A621CD /* ContactDetailCell.h */,
+				18E901901B68D38400A621CD /* ContactDetailCell.m */,
+				18E901911B68D38400A621CD /* ContactDetailCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18E901391B68C22B00A621CD /* Other【其他】 */ = {
+			isa = PBXGroup;
+			children = (
+				18E901571B68CCF100A621CD /* Tools */,
+				18E901501B68C92800A621CD /* CustomViews */,
+				18E9013F1B68C2B700A621CD /* Categories */,
+				18E9013B1B68C27000A621CD /* Helpers */,
+				18E9013A1B68C25400A621CD /* Libs */,
+			);
+			path = "Other【其他】";
+			sourceTree = "<group>";
+		};
+		18E9013A1B68C25400A621CD /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				18A468E71B6B258200D34169 /* DZNEmptyDataSet */,
+				18E901961B68D67D00A621CD /* TapkuLibrary */,
+				18E901761B68CFDD00A621CD /* T9ParseAndMatch */,
+				18E9015B1B68CF1F00A621CD /* PinYin4Objc */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		18E9013B1B68C27000A621CD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				18E9013C1B68C29400A621CD /* ContactsHelper.h */,
+				18E9013D1B68C29400A621CD /* ContactsHelper.m */,
+			);
+			name = Helpers;
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		18E9013F1B68C2B700A621CD /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				189FA7021B690A4400974058 /* UITabBarController+HideTabBar.h */,
+				189FA7031B690A4400974058 /* UITabBarController+HideTabBar.m */,
+				18E901401B68C2D900A621CD /* UIBarButtonItem+K.h */,
+				18E901411B68C2D900A621CD /* UIBarButtonItem+K.m */,
+				18E901431B68C2EE00A621CD /* NSString+K.h */,
+				18E901441B68C2EE00A621CD /* NSString+K.m */,
+				18E901A01B68DAB800A621CD /* NSMutableAttributedString+K.h */,
+				18E901A11B68DAB800A621CD /* NSMutableAttributedString+K.m */,
+				18E901451B68C2EE00A621CD /* NSArray+K.h */,
+				18E901461B68C2EE00A621CD /* NSArray+K.m */,
+				18E901471B68C2EE00A621CD /* NSDictionary+K.h */,
+				18E901481B68C2EE00A621CD /* NSDictionary+K.m */,
+				18A468E41B6B257100D34169 /* UIColor+Hexadecimal.h */,
+				18A468E51B6B257100D34169 /* UIColor+Hexadecimal.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		18E901501B68C92800A621CD /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				18A1EE1A1B69F3AC001AA628 /* NavigationButtons */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		18E901571B68CCF100A621CD /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				18E901581B68CEB100A621CD /* PinYinTool.h */,
+				18E901591B68CEB100A621CD /* PinYinTool.m */,
+				18E901891B68CFED00A621CD /* ExecTime.h */,
+				18E9018A1B68CFED00A621CD /* ExecTime.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		18E9015B1B68CF1F00A621CD /* PinYin4Objc */ = {
+			isa = PBXGroup;
+			children = (
+				18E9015C1B68CF1F00A621CD /* Classes */,
+				18E901681B68CF1F00A621CD /* Resources */,
+			);
+			path = PinYin4Objc;
+			sourceTree = "<group>";
+		};
+		18E9015C1B68CF1F00A621CD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				18E9015D1B68CF1F00A621CD /* ChineseToPinyinResource.h */,
+				18E9015E1B68CF1F00A621CD /* ChineseToPinyinResource.m */,
+				18E9015F1B68CF1F00A621CD /* HanyuPinyinOutputFormat.h */,
+				18E901601B68CF1F00A621CD /* HanyuPinyinOutputFormat.m */,
+				18E901611B68CF1F00A621CD /* NSString+PinYin4Cocoa.h */,
+				18E901621B68CF1F00A621CD /* NSString+PinYin4Cocoa.m */,
+				18E901631B68CF1F00A621CD /* PinYin4Objc.h */,
+				18E901641B68CF1F00A621CD /* PinyinFormatter.h */,
+				18E901651B68CF1F00A621CD /* PinyinFormatter.m */,
+				18E901661B68CF1F00A621CD /* PinyinHelper.h */,
+				18E901671B68CF1F00A621CD /* PinyinHelper.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		18E901681B68CF1F00A621CD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				18E901691B68CF1F00A621CD /* unicode_to_hanyu_pinyin.txt */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		18E901761B68CFDD00A621CD /* T9ParseAndMatch */ = {
+			isa = PBXGroup;
+			children = (
+				18E901771B68CFDD00A621CD /* BasePinyinUnit.h */,
+				18E901781B68CFDD00A621CD /* BasePinyinUnit.m */,
+				18E901791B68CFDD00A621CD /* ParsePinyinUtil.h */,
+				18E9017A1B68CFDD00A621CD /* ParsePinyinUtil.m */,
+				18E9017B1B68CFDD00A621CD /* PinyinUnit.h */,
+				18E9017C1B68CFDD00A621CD /* PinyinUnit.m */,
+				18E9017D1B68CFDD00A621CD /* QwertyMatchPinyinUtil.h */,
+				18E9017E1B68CFDD00A621CD /* QwertyMatchPinyinUtil.m */,
+				18E9017F1B68CFDD00A621CD /* T9MatchPinyinUtil.h */,
+				18E901801B68CFDD00A621CD /* T9MatchPinyinUtil.m */,
+				18E901811B68CFDD00A621CD /* T9Util.h */,
+				18E901821B68CFDD00A621CD /* T9Util.m */,
+			);
+			path = T9ParseAndMatch;
+			sourceTree = "<group>";
+		};
+		18E901961B68D67D00A621CD /* TapkuLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				18E901971B68D67D00A621CD /* TKAlertCenter.h */,
+				18E901981B68D67D00A621CD /* TKAlertCenter.m */,
+				18E901991B68D67D00A621CD /* TKGlobal.h */,
+				18E9019A1B68D67D00A621CD /* TKGlobal.m */,
+				18E9019B1B68D67D00A621CD /* UIView+TKCategory.h */,
+				18E9019C1B68D67D00A621CD /* UIView+TKCategory.m */,
+			);
+			path = TapkuLibrary;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18E900EF1B68ADF900A621CD /* BKContacts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E901131B68ADF900A621CD /* Build configuration list for PBXNativeTarget "BKContacts" */;
+			buildPhases = (
+				18E900EC1B68ADF900A621CD /* Sources */,
+				18E900ED1B68ADF900A621CD /* Frameworks */,
+				18E900EE1B68ADF900A621CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BKContacts;
+			productName = BKContacts;
+			productReference = 18E900F01B68ADF900A621CD /* BKContacts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18E901081B68ADF900A621CD /* BKContactsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E901161B68ADF900A621CD /* Build configuration list for PBXNativeTarget "BKContactsTests" */;
+			buildPhases = (
+				18E901051B68ADF900A621CD /* Sources */,
+				18E901061B68ADF900A621CD /* Frameworks */,
+				18E901071B68ADF900A621CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18E9010B1B68ADF900A621CD /* PBXTargetDependency */,
+			);
+			name = BKContactsTests;
+			productName = BKContactsTests;
+			productReference = 18E901091B68ADF900A621CD /* BKContactsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18E900E81B68ADF900A621CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = CloudRoom;
+				TargetAttributes = {
+					18E900EF1B68ADF900A621CD = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = CQEV6JSQ55;
+					};
+					18E901081B68ADF900A621CD = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 18E900EF1B68ADF900A621CD;
+					};
+				};
+			};
+			buildConfigurationList = 18E900EB1B68ADF900A621CD /* Build configuration list for PBXProject "BKContacts" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 18E900E71B68ADF900A621CD;
+			productRefGroup = 18E900F11B68ADF900A621CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18E900EF1B68ADF900A621CD /* BKContacts */,
+				18E901081B68ADF900A621CD /* BKContactsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18E900EE1B68ADF900A621CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E9016F1B68CF1F00A621CD /* unicode_to_hanyu_pinyin.txt in Resources */,
+				18E900FF1B68ADF900A621CD /* Main.storyboard in Resources */,
+				18E901041B68ADF900A621CD /* LaunchScreen.xib in Resources */,
+				189FA7101B69158E00974058 /* Localizable.strings in Resources */,
+				18E901951B68D38400A621CD /* ContactDetailCell.xib in Resources */,
+				18E901931B68D38400A621CD /* ContactCell.xib in Resources */,
+				18E901011B68ADF900A621CD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E901071B68ADF900A621CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18E900EC1B68ADF900A621CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E901421B68C2D900A621CD /* UIBarButtonItem+K.m in Sources */,
+				18E9018B1B68CFED00A621CD /* ExecTime.m in Sources */,
+				18E9011F1B68B16A00A621CD /* BaseTabBarController.m in Sources */,
+				18E9016E1B68CF1F00A621CD /* PinyinHelper.m in Sources */,
+				18E901921B68D38400A621CD /* ContactCell.m in Sources */,
+				18E901491B68C2EE00A621CD /* NSString+K.m in Sources */,
+				18E9019D1B68D67D00A621CD /* TKAlertCenter.m in Sources */,
+				18E901751B68CF8700A621CD /* SortContact.m in Sources */,
+				18E9019E1B68D67D00A621CD /* TKGlobal.m in Sources */,
+				18E901351B68B4F500A621CD /* ContactsDelegateViewController.m in Sources */,
+				18E9014A1B68C2EE00A621CD /* NSArray+K.m in Sources */,
+				18E901221B68B17A00A621CD /* BaseViewController.m in Sources */,
+				18E901251B68B19300A621CD /* BaseTableViewController.m in Sources */,
+				18A468E61B6B257100D34169 /* UIColor+Hexadecimal.m in Sources */,
+				18A468EA1B6B25AD00D34169 /* UIScrollView+EmptyDataSet.m in Sources */,
+				18E9013E1B68C29400A621CD /* ContactsHelper.m in Sources */,
+				18E901941B68D38400A621CD /* ContactDetailCell.m in Sources */,
+				189FA7071B690EDB00974058 /* ContactDetailViewController.m in Sources */,
+				18E9011C1B68B12F00A621CD /* BaseNavigationController.m in Sources */,
+				18E901881B68CFDD00A621CD /* T9Util.m in Sources */,
+				18E9019F1B68D67D00A621CD /* UIView+TKCategory.m in Sources */,
+				18E9016C1B68CF1F00A621CD /* NSString+PinYin4Cocoa.m in Sources */,
+				18A1EE1F1B69F3E4001AA628 /* BackButton.m in Sources */,
+				18E901831B68CFDD00A621CD /* BasePinyinUnit.m in Sources */,
+				18E901861B68CFDD00A621CD /* QwertyMatchPinyinUtil.m in Sources */,
+				18E901841B68CFDD00A621CD /* ParsePinyinUtil.m in Sources */,
+				18E9012D1B68B43700A621CD /* main.m in Sources */,
+				18E901A21B68DAB800A621CD /* NSMutableAttributedString+K.m in Sources */,
+				18E901851B68CFDD00A621CD /* PinyinUnit.m in Sources */,
+				18E9016A1B68CF1F00A621CD /* ChineseToPinyinResource.m in Sources */,
+				18A1EE201B69F3E4001AA628 /* RightButton.m in Sources */,
+				18A3EB691B9C3C2E0080FF5B /* ContactsViewController.m in Sources */,
+				189FA7041B690A4400974058 /* UITabBarController+HideTabBar.m in Sources */,
+				18E9016B1B68CF1F00A621CD /* HanyuPinyinOutputFormat.m in Sources */,
+				18E9014B1B68C2EE00A621CD /* NSDictionary+K.m in Sources */,
+				18E901871B68CFDD00A621CD /* T9MatchPinyinUtil.m in Sources */,
+				18E9016D1B68CF1F00A621CD /* PinyinFormatter.m in Sources */,
+				18E9015A1B68CEB100A621CD /* PinYinTool.m in Sources */,
+				18E901741B68CF8700A621CD /* Contact.m in Sources */,
+				18A3EB661B9C38EF0080FF5B /* ContactsBlockViewController.m in Sources */,
+				18E901321B68B4E600A621CD /* MoreViewController.m in Sources */,
+				18E9012C1B68B43700A621CD /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E901051B68ADF900A621CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E901101B68ADF900A621CD /* BKContactsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18E9010B1B68ADF900A621CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18E900EF1B68ADF900A621CD /* BKContacts */;
+			targetProxy = 18E9010A1B68ADF900A621CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		189FA7121B69158E00974058 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				189FA7111B69158E00974058 /* en */,
+				189FA7131B6915CD00974058 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		18E900FD1B68ADF900A621CD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18E900FE1B68ADF900A621CD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18E901021B68ADF900A621CD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18E901031B68ADF900A621CD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18E901111B68ADF900A621CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18E901121B68ADF900A621CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18E901141B68ADF900A621CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BKContacts/BKContacts.pch";
+				INFOPLIST_FILE = BKContacts/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		18E901151B68ADF900A621CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BKContacts/BKContacts.pch";
+				INFOPLIST_FILE = BKContacts/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		18E901171B68ADF900A621CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BKContactsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BKContacts.app/BKContacts";
+			};
+			name = Debug;
+		};
+		18E901181B68ADF900A621CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BKContactsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BKContacts.app/BKContacts";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18E900EB1B68ADF900A621CD /* Build configuration list for PBXProject "BKContacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E901111B68ADF900A621CD /* Debug */,
+				18E901121B68ADF900A621CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18E901131B68ADF900A621CD /* Build configuration list for PBXNativeTarget "BKContacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E901141B68ADF900A621CD /* Debug */,
+				18E901151B68ADF900A621CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18E901161B68ADF900A621CD /* Build configuration list for PBXNativeTarget "BKContactsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E901171B68ADF900A621CD /* Debug */,
+				18E901181B68ADF900A621CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18E900E81B68ADF900A621CD /* Project object */;
+}
