@@ -109,6 +109,7 @@ void AddressBookContactsChangedCallback(ABAddressBookRef addressBook,CFDictionar
     [[NSNotificationCenter defaultCenter] postNotificationName:@"contactChanged" object:appDelegate userInfo:nil];
 }
 
+#pragma mark - public methods
 /**
  *  注册回调函数
  */
