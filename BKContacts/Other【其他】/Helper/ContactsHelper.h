@@ -73,14 +73,14 @@ typedef void (^ResultBlock) (ContactsHelper *helper, NSArray *contactsList);
 /**
  *  联系人列表
  */
-@property (nonatomic, strong) NSArray *contactsList;
+@property (nonatomic, copy) NSArray *contactsList;
 
 /**
  *  联系人分组列表
  *
  *  @param contactsList 联系人分组列表
  */
-@property (nonatomic, strong) NSArray *partitionedContactsList;
+@property (nonatomic, copy) NSArray *partitionedContactsList;
 
 /**
  *  搜索联系人列表

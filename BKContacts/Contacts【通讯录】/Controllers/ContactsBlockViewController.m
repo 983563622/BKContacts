@@ -23,17 +23,17 @@
 /**
  *  通讯录数据集
  */
-@property (nonatomic, strong) NSArray *dataSource;
+@property (nonatomic, copy) NSArray *dataSource;
 
 /**
  *  搜索结果数据集
  */
-@property (nonatomic, strong) NSArray *filteredDataSource;
+@property (nonatomic, copy) NSArray *filteredDataSource;
 
 /**
  *  TableView右边的IndexTitles数据集
  */
-@property (nonatomic, strong) NSArray *sectionIndexTitles;
+@property (nonatomic, copy) NSArray *sectionIndexTitles;
 
 @end
 
@@ -64,11 +64,7 @@
 
 - (void)viewDidLayoutSubviews
 {
-    UITableView *tableView = [self.searchDisplayController searchResultsTableView];
-    
-    BKLog(@"%@",NSStringFromUIEdgeInsets([tableView contentInset]));
-    
-    BKLog(@"%@",NSStringFromUIEdgeInsets([tableView scrollIndicatorInsets]));
+    [super viewDidLayoutSubviews];
 }
 
 - (void)didReceiveMemoryWarning
@@ -79,11 +75,11 @@
 
 - (void)dealloc
 {
-    self.dataSource = nil;
+    _dataSource = nil;
     
-    self.filteredDataSource = nil;
+    _filteredDataSource = nil;
     
-    self.sectionIndexTitles = nil;
+    _sectionIndexTitles = nil;
     
     self.searchDisplayController.searchResultsTableView.emptyDataSetSource = nil;
     
@@ -98,9 +94,9 @@
 #pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    if ([tableView isEqual:self.tableView] == YES)
+    if ([tableView isEqual:_tableView] == YES)
     {
-        return [self.dataSource count];
+        return (NSInteger)[_dataSource count];
     }
     else // searchResultsTableView
     {
@@ -110,13 +106,13 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if ([tableView isEqual:self.tableView] == YES)
+    if ([tableView isEqual:_tableView] == YES)
     {
-        return [self.dataSource[section] count];
+        return (NSInteger)[[_dataSource objectAtIndex:(NSUInteger)section] count];
     }
     else // searchResultsTableView
     {
-        return self.filteredDataSource.count;
+        return (NSInteger)[_filteredDataSource count];
     }
 }
 
@@ -128,13 +124,13 @@
     SortContact *sortContact = nil;
     
     // get sortContact
-    if ([tableView isEqual:self.tableView] == YES)
+    if ([tableView isEqual:_tableView] == YES)
     {
-        sortContact = self.dataSource[indexPath.section][indexPath.row];
+        sortContact = [[_dataSource objectAtIndex:(NSUInteger)[indexPath section]] objectAtIndex:(NSUInteger)[indexPath row]];
     }
     else // searchResultsTableView
     {
-        sortContact = self.filteredDataSource[indexPath.row];
+        sortContact = [_filteredDataSource objectAtIndex:(NSUInteger)[indexPath row]];
     }
     
     // set sortContact
@@ -150,7 +146,7 @@
     }
     else
     {
-        cell.imageIcon.image = [UIImage imageNamed:[NSString stringWithFormat:@"contact_icon_%zd",(indexPath.section + indexPath.row) % 4 + 1]];
+        cell.imageIcon.image = [UIImage imageNamed:[NSString stringWithFormat:@"contact_icon_%zd",([indexPath section] + [indexPath row]) % 4 + 1]];
     }
     
     // set name and phonenum
@@ -186,7 +182,7 @@
             
             NSMutableAttributedString *attrString = [NSMutableAttributedString attributeStringWithContent:sortContact.name keyWords:sortContact.matchKeywords];
             
-            if ([tableView isEqual:self.tableView] == NO)
+            if ([tableView isEqual:_tableView] == NO)
             {
                 [self showView:cell.phonename WithHighLightText:attrString];
                 
@@ -205,7 +201,7 @@
             
             NSMutableAttributedString *attrString = [NSMutableAttributedString attributeStringWithContent:sortContact.phonenum keyWords:sortContact.matchKeywords];
             
-            if ([tableView isEqual:self.tableView] == NO)
+            if ([tableView isEqual:_tableView] == NO)
             {
                 [self showView:cell.phonenum WithHighLightText:attrString];
                 
@@ -224,7 +220,7 @@
 // list of section titles to display in section index view (e.g. "ABCD...Z#")
 - (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView
 {
-    if ([tableView isEqual:self.tableView] == YES)
+    if ([tableView isEqual:_tableView] == YES)
     {
         NSMutableArray *indices = [NSMutableArray array];
         
@@ -249,15 +245,15 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    if ([tableView isEqual:self.tableView] == YES)
+    if ([tableView isEqual:_tableView] == YES)
     {
-        if([[self.dataSource objectAtIndex:section] count] <= 0)
+        if([[_dataSource objectAtIndex:(NSUInteger)section] count] <= 0)
         {
             return nil;
         }
         else
         {
-            return self.sectionIndexTitles[section];
+            return [_sectionIndexTitles objectAtIndex:(NSUInteger)section];
         }
     }
     else // searchResultsTableView
@@ -273,13 +269,13 @@
     
     SortContact *sortContact = nil;
     
-    if ([tableView isEqual:self.tableView] == YES)
+    if ([tableView isEqual:_tableView] == YES)
     {
-        sortContact = self.dataSource[indexPath.section][indexPath.row];
+        sortContact = [[_dataSource objectAtIndex:(NSUInteger)[indexPath section]] objectAtIndex:(NSUInteger)[indexPath row]];
     }
     else // searchResultsTableView
     {
-        sortContact = self.filteredDataSource[indexPath.row];
+        sortContact = [_filteredDataSource objectAtIndex:(NSUInteger)[indexPath row]];
     }
     
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
@@ -362,9 +358,9 @@
             [[TKAlertCenter defaultCenter] postAlertWithMessage:@"无联系人!"];
         }
         
-        self.dataSource = contactsList;
+        _dataSource = contactsList;
         
-        [self.tableView reloadData];
+        [_tableView reloadData];
     }];
 }
 
@@ -475,21 +471,21 @@
             [[TKAlertCenter defaultCenter] postAlertWithMessage:@"无联系人!"];
         }
         
-        self.dataSource = contactsList;
+        _dataSource = contactsList;
         
-        [self.tableView reloadData];
+        [_tableView reloadData];
     }];
 }
 
 #pragma mark - private methods
 - (void)setupUIScreenForContactsBlockViewController
 {
-    self.tableView.rowHeight = 60.0f;
+    _tableView.rowHeight = 60.0f;
     
-    [self.tableView flashScrollIndicators];
+    [_tableView flashScrollIndicators];
     
     // clear the unused cell
-    self.tableView.tableFooterView = [[UIView alloc] init];
+    _tableView.tableFooterView = [[UIView alloc] init];
     
     self.searchDisplayController.searchResultsTableView.rowHeight = 60.0f;
     
@@ -514,7 +510,7 @@
 
 - (void)initDataSource
 {
-    self.sectionIndexTitles = [UILocalizedIndexedCollation.currentCollation sectionIndexTitles];
+    _sectionIndexTitles = [UILocalizedIndexedCollation.currentCollation sectionIndexTitles];
     
     // 加载通讯录
     [[ContactsHelper shareContactsHelper] contactsLoadedWithResult:^ void (ContactsHelper *helper, NSArray *contactsList)
@@ -524,9 +520,9 @@
             [[TKAlertCenter defaultCenter] postAlertWithMessage:@"无联系人!"];
         }
         
-        self.dataSource = contactsList;
+        _dataSource = contactsList;
         
-        [self.tableView reloadData];
+        [_tableView reloadData];
     }];
 }
 
@@ -534,7 +530,7 @@
 {
     [[ContactsHelper shareContactsHelper] contactsFilterWithKey:[searchText lowercaseString] byType:ContactsFilterTypeQuery withResult:^ void (ContactsHelper *helper, NSArray *contactsList)
     {
-        self.filteredDataSource = contactsList;
+        _filteredDataSource = contactsList;
         //TODO: 此处无需使用reloadData
     }];
 }

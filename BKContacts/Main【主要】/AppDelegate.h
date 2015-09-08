@@ -14,5 +14,7 @@
 
 - (void)registerAddressBookChanged;
 
+- (void)unregisterAddressBookChanged;
+
 @end
 

@@ -13,7 +13,7 @@
 /**
  *  保存拼音串(可以是任意的字符串)
  */
-@property (nonatomic, strong) NSString *pinyin;
+@property (nonatomic, copy) NSString *pinyin;
 
 /**
  *  保存pinyin对应的T9数字

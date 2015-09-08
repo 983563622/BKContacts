@@ -41,7 +41,7 @@
     
     _addressBook = ABAddressBookCreateWithOptions(NULL, NULL);
     
-    self.hasRegisterAddressBookChanged = NO;
+    _hasRegisterAddressBookChanged = NO;
     
     // 添加通信录变化监听
     [self registerAddressBookChanged];
@@ -96,16 +96,17 @@ void AddressBookContactsChangedCallback(ABAddressBookRef addressBook,CFDictionar
     [[NSNotificationCenter defaultCenter] postNotificationName:@"contactChanged" object:appDelegate userInfo:nil];
 }
 
+#pragma mark - public methods
 /**
  *  注册回调函数
  */
 - (void)registerAddressBookChanged
 {
-    if (self.hasRegisterAddressBookChanged == NO)
+    if (_hasRegisterAddressBookChanged == NO)
     {
         ABAddressBookRegisterExternalChangeCallback(_addressBook, AddressBookContactsChangedCallback, (__bridge void *)(self));
         
-        self.hasRegisterAddressBookChanged = YES;
+        _hasRegisterAddressBookChanged = YES;
     }
 }
 
@@ -114,11 +115,11 @@ void AddressBookContactsChangedCallback(ABAddressBookRef addressBook,CFDictionar
  */
 - (void)unregisterAddressBookChanged
 {
-    if (self.hasRegisterAddressBookChanged == YES)
+    if (_hasRegisterAddressBookChanged == YES)
     {
         ABAddressBookUnregisterExternalChangeCallback(_addressBook, AddressBookContactsChangedCallback, (__bridge void *)(self));
         
-        self.hasRegisterAddressBookChanged = NO;
+        _hasRegisterAddressBookChanged = NO;
     }
 }
 

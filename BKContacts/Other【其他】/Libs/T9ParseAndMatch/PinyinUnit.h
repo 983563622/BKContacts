@@ -18,12 +18,12 @@
 /**
  *  记录在原始字符串中的位置
  */
-@property (nonatomic,assign) NSInteger startPosition;
+@property (nonatomic, assign) NSInteger startPosition;
 
 /**
  *  保存拼音(多音字长度大于1,单音字或其他类型字符串长度为1),元素对象:T9PinyinUnit
  */
-@property (nonatomic,strong) NSMutableArray *basePinyinUnits;
+@property (nonatomic, strong) NSMutableArray *basePinyinUnits;
 
 
 - (void)initWithIsPinyin:(BOOL)isPinyin andStartPosition:(NSInteger)startPosition;

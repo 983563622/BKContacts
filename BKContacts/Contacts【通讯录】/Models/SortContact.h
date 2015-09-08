@@ -36,6 +36,6 @@ typedef NS_ENUM(NSInteger, ContactSearchType)
 /**
  *  排序关键字
  */
-@property (nonatomic,copy) NSString *sortContactKey;
+@property (nonatomic, copy) NSString *sortContactKey;
 
 @end
