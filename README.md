@@ -32,9 +32,9 @@
         [[TKAlertCenter defaultCenter] postAlertWithMessage:@"无联系人!"];
     }
     
-    self.dataSource = contactsList;
+    _dataSource = contactsList;
     
-    [self.tableView reloadData];
+    [_tableView reloadData];
 }];
 
 or
@@ -81,7 +81,7 @@ contactsHelper.delegate = self;
     
     _addressBook = ABAddressBookCreateWithOptions(NULL, NULL);
     
-    self.hasRegisterAddressBookChanged = NO;
+    _hasRegisterAddressBookChanged = NO;
     
     // 添加通信录变化监听
     [self registerAddressBookChanged];
@@ -115,11 +115,11 @@ void AddressBookContactsChangedCallback(ABAddressBookRef addressBook,CFDictionar
  */
 - (void)registerAddressBookChanged
 {
-    if (self.hasRegisterAddressBookChanged == NO)
+    if (_hasRegisterAddressBookChanged == NO)
     {
         ABAddressBookRegisterExternalChangeCallback(_addressBook, AddressBookContactsChangedCallback, (__bridge void *)(self));
         
-        self.hasRegisterAddressBookChanged = YES;
+        _hasRegisterAddressBookChanged = YES;
     }
 }
 
@@ -128,11 +128,11 @@ void AddressBookContactsChangedCallback(ABAddressBookRef addressBook,CFDictionar
  */
 - (void)unregisterAddressBookChanged
 {
-    if (self.hasRegisterAddressBookChanged == YES)
+    if (_hasRegisterAddressBookChanged == YES)
     {
         ABAddressBookUnregisterExternalChangeCallback(_addressBook, AddressBookContactsChangedCallback, (__bridge void *)(self));
         
-        self.hasRegisterAddressBookChanged = NO;
+        _hasRegisterAddressBookChanged = NO;
     }
 }
 ```
@@ -148,15 +148,15 @@ void AddressBookContactsChangedCallback(ABAddressBookRef addressBook,CFDictionar
         [[TKAlertCenter defaultCenter] postAlertWithMessage:@"无联系人!"];
     }
     
-    self.dataSource = contactsList;
+    _dataSource = contactsList;
     
-    [self.tableView reloadData];
+    [_tableView reloadData];
 }];
 
 // 查找联系人
 [[ContactsHelper shareContactsHelper] contactsFilterWithKey:[searchText lowercaseString] byType:ContactsFilterTypeQuery withResult:^ void (ContactsHelper *helper, NSArray *contactsList)
 {
-    self.filteredDataSource = contactsList;
+    _filteredDataSource = contactsList;
     //TODO: 此处无需使用reloadData
 }];
 
@@ -168,9 +168,9 @@ void AddressBookContactsChangedCallback(ABAddressBookRef addressBook,CFDictionar
         [[TKAlertCenter defaultCenter] postAlertWithMessage:@"无联系人!"];
     }
     
-    self.dataSource = contactsList;
+    _dataSource = contactsList;
     
-    [self.tableView reloadData];
+    [_tableView reloadData];
 }];
 ```
 
